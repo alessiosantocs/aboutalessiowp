@@ -21,30 +21,26 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('ready animation-started animation-ended'); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
+	<nav class="navbar navbar-default navbar-cinnamon navbar-fixed-top" role="navigation">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="<?php echo home_url(); ?>">
+					<div class="logo">
+						<span class="typo-brand-weak logotype-about">essays</span><span id="logotype-displayname" class="typo-brand-strong logotype-displayname">alessio</span>
+					</div>
+					<!-- <img src="./images/logo.svg" alt="About Alessio" height="37" /> -->
+				</a>
+	    </div>
 
-	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<?php
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
+			<!-- <button onclick="$('#contact').modal('toggle');" class="link link-primary pull-right modal-closer no-padding navbar-btn">
+				<img src="images/email.svg" alt="Close">
+				<img src="images/cross.svg" class="hidden" alt="Close">
+			</button> -->
+	  </div><!-- /.container-fluid -->
+	</nav><!-- /.navbar -->
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
-				?>
-				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
 
-		<?php get_sidebar(); ?>
-	</div><!-- .sidebar -->
-
-	<div id="content" class="site-content">
+	<div id="content" class="container">

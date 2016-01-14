@@ -27,6 +27,15 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+			<div class="panel panel-default" style="box-shadow: none;">
+				<div class="panel-body">
+					<p style="margin: 0;">
+						Hello and thank you for reading my essays.<br>
+						I'm <a href="http://aboutalessio.com">Alessio Santo</a> a product engineer and young entrepreneur.
+					</p>
+				</div>
+			</div>
+
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
