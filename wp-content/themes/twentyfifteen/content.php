@@ -39,12 +39,17 @@
 
 		<div class="section-content">
 			<div id="project-content">
+
 				<?php
-					/* translators: %s: Name of current post */
-					the_content( sprintf(
-						__( 'Continue reading %s', 'twentyfifteen' ),
-						the_title( '<span class="screen-reader-text">', '</span>', false )
-					) );
+					if ( is_single() ) :
+						/* translators: %s: Name of current post */
+						the_content();
+					else:
+						the_excerpt();
+					endif;
+				?>
+
+				<?php
 
 					wp_link_pages( array(
 						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
