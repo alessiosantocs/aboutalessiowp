@@ -19,22 +19,21 @@
 
 	<section class="section section-size-0">
 		<div class="section-header row">
-			<div class="col-sm-12 no-padding-right">
-				<h1 class="h2 no-margin-top project-name">
-					<?php
-						if ( is_single() ) :
-							the_title();
-						else :
-							the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' );
-						endif;
-					?>
+			<div class="col-xs-12 col-sm-7 no-padding-right">
+				<h1 class="post-title no-margin">
+					<?php the_title(); ?>
 				</h1>
 			</div>
-			<!-- <div class="col-xs-12 col-sm-5">
+			<div class="col-xs-12 col-sm-5">
 				<div class="padding-top hidden-xs"></div>
-				<a href="#" class="link link-primary project-link">View this project live</a>
-				<p class="light small project-date">Done when?</p>
-			</div> -->
+				<p class="light small project-date no-margin"><?php the_date(); ?></p>
+				<div>
+					<?php $categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
+					if ( $categories_list && twentyfifteen_categorized_blog() ) {
+						echo $categories_list;
+					} ?>
+				</div>
+			</div>
 		</div>
 
 		<div class="section-content">

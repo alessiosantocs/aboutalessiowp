@@ -176,3 +176,8 @@ button{
 		text-decoration: none;
 	}
 }
+
+a{
+	@extend .link;
+	@extend .link-primary;
+}

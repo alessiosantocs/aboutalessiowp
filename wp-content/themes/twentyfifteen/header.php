@@ -43,4 +43,4 @@
 	</nav><!-- /.navbar -->
 
 
-	<div id="content" class="container">
+	<div id="content" class="container site-content">

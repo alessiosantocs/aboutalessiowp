@@ -331,7 +331,7 @@ hr {
   .hide-before-preload.enter, .show-after-preload.enter {
     opacity: 1; }
 
-.unselectable, .modal-closer, .modal-closer img, .pressable, .project, .career-experience, .repository {
+.unselectable, .modal-closer, .modal-closer img, .pressable {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -984,61 +984,61 @@ h6, .h6 {
     margin-left: 5px; }
 
 /*Primary button*/
-.link {
+.link, a {
   display: inline-block;
   color: inherit;
   font-size: inherit;
   padding: 0px;
   font-weight: normal;
   text-decoration: underline; }
-  .link.link-inline {
+  .link.link-inline, a.link-inline {
     display: inline; }
-  .link:hover {
+  .link:hover, a:hover {
     color: inherit;
     text-decoration: none; }
-  .link.link-primary {
+  .link.link-primary, a {
     color: #2196f3;
     text-decoration: underline; }
-    .link.link-primary:hover, .link.link-primary.hover {
+    .link.link-primary:hover, a:hover, .link.link-primary.hover, a.hover {
       text-decoration: none;
       background-color: #cae6fc; }
-  .link.link-warning {
+  .link.link-warning, a.link-warning {
     color: #9be9f4;
     text-decoration: underline; }
-    .link.link-warning:hover, .link.link-warning.hover {
+    .link.link-warning:hover, a.link-warning:hover, .link.link-warning.hover, a.link-warning.hover {
       text-decoration: none;
       background-color: white; }
-  .link.link-danger {
+  .link.link-danger, a.link-danger {
     color: #555555;
     text-decoration: underline; }
-    .link.link-danger:hover, .link.link-danger.hover {
+    .link.link-danger:hover, a.link-danger:hover, .link.link-danger.hover, a.link-danger.hover {
       text-decoration: none;
       background-color: #aeaeae; }
-  .link.link-info {
+  .link.link-info, a.link-info {
     color: #84e4f1;
     text-decoration: underline; }
-    .link.link-info:hover, .link.link-info.hover {
+    .link.link-info:hover, a.link-info:hover, .link.link-info.hover, a.link-info.hover {
       text-decoration: none;
       background-color: white; }
-  .link.link-white {
+  .link.link-white, a.link-white {
     color: white;
     text-decoration: underline; }
-    .link.link-white:hover, .link.link-white.hover {
+    .link.link-white:hover, a.link-white:hover, .link.link-white.hover, a.link-white.hover {
       text-decoration: none;
       background-color: white; }
-  .link.link-default {
+  .link.link-default, a.link-default {
     color: #555555;
     text-decoration: underline; }
-    .link.link-default:hover, .link.link-default.hover {
+    .link.link-default:hover, a.link-default:hover, .link.link-default.hover, a.link-default.hover {
       text-decoration: none;
       background-color: #aeaeae; }
-  .link.link-success {
+  .link.link-success, a.link-success {
     color: #929f6d;
     text-decoration: underline; }
-    .link.link-success:hover, .link.link-success.hover {
+    .link.link-success:hover, a.link-success:hover, .link.link-success.hover, a.link-success.hover {
       text-decoration: none;
       background-color: #e2e6d9; }
-  .link:not(.link-inline) {
+  .link:not(.link-inline), a:not(.link-inline) {
     background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0.3) 1%, transparent 1%);
     background: -o-radial-gradient(circle, rgba(255, 255, 255, 0.3) 1%, transparent 1%);
     background: -moz-radial-gradient(circle, rgba(255, 255, 255, 0.3) 1%, transparent 1%);
@@ -1052,34 +1052,34 @@ h6, .h6 {
     background-position: center;
     background-color: transparent;
     background-size: 0%; }
-    .link:not(.link-inline):active, .link:not(.link-inline).active {
+    .link:not(.link-inline):active, a:not(.link-inline):active, .link:not(.link-inline).active, a:not(.link-inline).active {
       -webkit-transition: background-size 0.4s ease;
       -moz-transition: background-size 0.4s ease;
       -ms-transition: background-size 0.4s ease;
       -o-transition: background-size 0.4s ease;
       transition: background-size 0.4s ease;
       background-size: 15000%; }
-  .link.link-pokerface {
+  .link.link-pokerface, a.link-pokerface {
     color: #555555; }
-  .link.disabled, .link:disabled {
+  .link.disabled, a.disabled, .link:disabled, a:disabled {
     opacity: 0.5;
     text-decoration: line-through !important;
     cursor: default; }
-  .link.link-xs {
+  .link.link-xs, a.link-xs {
     font-size: 12px; }
-  .link.link-sm {
+  .link.link-sm, a.link-sm {
     font-size: 13px; }
-  .link.link-lg {
+  .link.link-lg, a.link-lg {
     font-size: 18px; }
-  .link.link-xl {
+  .link.link-xl, a.link-xl {
     font-size: 22px; }
-  .link.link-square {
+  .link.link-square, a.link-square {
     display: inline-block;
     width: 40px;
     text-align: center; }
-  .link.link-social {
+  .link.link-social, a.link-social {
     color: #555555; }
-    .link.link-social:hover {
+    .link.link-social:hover, a.link-social:hover {
       color: #626262; }
 
 button.link {
@@ -1090,7 +1090,7 @@ button.link {
   button.link:focus {
     outline: none; }
 
-.pressable, .project, .career-experience, .repository {
+.pressable {
   cursor: pointer;
   padding: 0px 10px;
   margin-left: -10px;
@@ -1110,33 +1110,33 @@ button.link {
   background-position: center;
   background-color: transparent;
   background-size: 0%; }
-  .pressable:active, .project:active, .career-experience:active, .repository:active, .pressable.active, .active.project, .active.career-experience, .active.repository {
+  .pressable:active, .pressable.active {
     -webkit-transition: background-size 0.7s ease;
     -moz-transition: background-size 0.7s ease;
     -ms-transition: background-size 0.7s ease;
     -o-transition: background-size 0.7s ease;
     transition: background-size 0.7s ease;
     background-size: 15000%; }
-  .pressable:before, .project:before, .career-experience:before, .repository:before, .pressable:after, .project:after, .career-experience:after, .repository:after {
+  .pressable:before, .pressable:after {
     display: table;
     content: " "; }
-  .pressable:after, .project:after, .career-experience:after, .repository:after {
+  .pressable:after {
     clear: both; }
-  .pressable.pressable-primary:hover, .pressable:hover, .project:hover, .career-experience:hover, .repository:hover, .pressable.pressable-primary.hover, .pressable.hover, .hover.project, .hover.career-experience, .hover.repository {
+  .pressable.pressable-primary:hover, .pressable:hover, .pressable.pressable-primary.hover, .pressable.hover {
     background-color: #cae6fc; }
-  .pressable.pressable-warning:hover, .pressable-warning.project:hover, .pressable-warning.career-experience:hover, .pressable-warning.repository:hover, .pressable.pressable-warning.hover, .pressable-warning.hover.project, .pressable-warning.hover.career-experience, .pressable-warning.hover.repository {
+  .pressable.pressable-warning:hover, .pressable.pressable-warning.hover {
     background-color: white; }
-  .pressable.pressable-danger:hover, .pressable-danger.project:hover, .pressable-danger.career-experience:hover, .pressable-danger.repository:hover, .pressable.pressable-danger.hover, .pressable-danger.hover.project, .pressable-danger.hover.career-experience, .pressable-danger.hover.repository {
+  .pressable.pressable-danger:hover, .pressable.pressable-danger.hover {
     background-color: #aeaeae; }
-  .pressable.pressable-info:hover, .pressable-info.project:hover, .pressable-info.career-experience:hover, .pressable-info.repository:hover, .pressable.pressable-info.hover, .pressable-info.hover.project, .pressable-info.hover.career-experience, .pressable-info.hover.repository {
+  .pressable.pressable-info:hover, .pressable.pressable-info.hover {
     background-color: white; }
-  .pressable.pressable-white:hover, .pressable-white.project:hover, .pressable-white.career-experience:hover, .pressable-white.repository:hover, .pressable.pressable-white.hover, .pressable-white.hover.project, .pressable-white.hover.career-experience, .pressable-white.hover.repository {
+  .pressable.pressable-white:hover, .pressable.pressable-white.hover {
     background-color: white; }
-  .pressable.pressable-default:hover, .pressable-default.project:hover, .pressable-default.career-experience:hover, .pressable-default.repository:hover, .pressable.pressable-default.hover, .pressable-default.hover.project, .pressable-default.hover.career-experience, .pressable-default.hover.repository {
+  .pressable.pressable-default:hover, .pressable.pressable-default.hover {
     background-color: #aeaeae; }
-  .pressable.pressable-success:hover, .pressable-success.project:hover, .pressable-success.career-experience:hover, .pressable-success.repository:hover, .pressable.pressable-success.hover, .pressable-success.hover.project, .pressable-success.hover.career-experience, .pressable-success.hover.repository {
+  .pressable.pressable-success:hover, .pressable.pressable-success.hover {
     background-color: #e2e6d9; }
-  .pressable .link, .project .link, .career-experience .link, .repository .link {
+  .pressable .link, .pressable a {
     text-decoration: none; }
 
 .knowledge-title {
@@ -1205,9 +1205,8 @@ p {
 body {
   letter-spacing: 0; }
 
-@media (min-width: 768px) {
-  #project-content p {
-    font-size: 18px; } }
+#project-content p {
+  font-size: 18px; }
 
 .bullet {
   display: inline-block;

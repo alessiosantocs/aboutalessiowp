@@ -16,27 +16,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+	<section class="section section-size-0 projects">
+		<!-- <div class="section-header">
+			<h4 class="slash">essays</h4>
+		</div> -->
 		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<div class="panel panel-default" style="box-shadow: none;">
-				<div class="panel-body">
-					<p style="margin: 0;">
-						Hello and thank you for reading my essays.<br>
-						I'm <a href="http://aboutalessio.com">Alessio Santo</a> a product engineer and young entrepreneur.
-					</p>
-				</div>
-			</div>
-
-			<?php
+		<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
 
@@ -45,7 +30,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
+				get_template_part( 'loop-content', get_post_format() );
 
 			// End the loop.
 			endwhile;
@@ -64,7 +49,7 @@ get_header(); ?>
 		endif;
 		?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	</section>
+
 
 <?php get_footer(); ?>
