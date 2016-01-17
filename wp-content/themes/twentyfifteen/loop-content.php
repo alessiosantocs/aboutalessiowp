@@ -1,12 +1,12 @@
 		<div class="project">
 			<div class="row">
-				<div class="col-xs-12 col-sm-7">
+				<div class="col-xs-12 col-sm-8">
 					<a href="<?php echo get_the_permalink() ?>" class="link link-lg link-primary project-link">
 						<?php the_title() ?>
 					</a>
 				</div>
 
-				<div class="col-sm-5 text-right no-padding-left hidden-xs">
+				<div class="col-sm-4 text-right no-padding-left hidden-xs">
 					<?php if (is_sticky()): ?>
 						<span class="label label-sm label-warning">Featured post</span>
 					<?php else: ?>
