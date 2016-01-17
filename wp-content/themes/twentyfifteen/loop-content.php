@@ -18,13 +18,13 @@
 			</div>
 
 			<div class="row">
-				<div class="col-sm-7">
+				<div class="col-sm-12">
 					<p class="light margin-bottom project-description">
-						<?php echo get_the_excerpt(); ?>
+						<?php echo the_excerpt_max_charlength(120); ?>
 					</p>
 				</div>
 
-				<div class="col-sm-5 text-right no-padding-left hidden-xs small">
+				<div class="col-sm-5 text-right no-padding-left hidden-xs small hidden">
 					<?php $categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
 					if ( $categories_list && twentyfifteen_categorized_blog() ) {
 						echo $categories_list;
