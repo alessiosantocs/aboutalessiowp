@@ -19,12 +19,12 @@
 
 	<section class="section section-size-0">
 		<div class="section-header row">
-			<div class="col-xs-12 col-sm-7 no-padding-right">
+			<div class="col-xs-12 col-sm-8 no-padding-right">
 				<h1 class="post-title no-margin">
 					<?php the_title(); ?>
 				</h1>
 			</div>
-			<div class="col-xs-12 col-sm-5">
+			<div class="col-xs-12 col-sm-4 text-right">
 				<div class="padding-top hidden-xs"></div>
 				<p class="light small project-date no-margin"><?php the_date(); ?></p>
 				<div>

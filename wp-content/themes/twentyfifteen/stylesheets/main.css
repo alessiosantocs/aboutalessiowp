@@ -1210,7 +1210,8 @@ body {
   letter-spacing: 0; }
 
 #project-content p {
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 1.5em; }
 
 .bullet {
   display: inline-block;
